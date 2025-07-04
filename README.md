@@ -1,67 +1,87 @@
-![Cover](https://github.com/nephcode/rethagon/blob/main/.github/images/rethagonReadmeHeader.png)
+# Welcome to React Router!
 
-<!-- ∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴ -->
+A modern, production-ready template for building full-stack React applications using React Router.
 
-# RETHAGON
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
-Rethagon: A "BattleRap" Game
+## Features
 
-Rethagon, a game of "BattleRap". Collect the cards of Battle MCs, rate their performances, and boost your favorites. The first complete prediction platform for Battle Rap.
+- 🚀 Server-side rendering
+- ⚡️ Hot Module Replacement (HMR)
+- 📦 Asset bundling and optimization
+- 🔄 Data loading and mutations
+- 🔒 TypeScript by default
+- 🎉 TailwindCSS for styling
+- 📖 [React Router docs](https://reactrouter.com/)
 
-## PROJECT DELIVERIES
+## Getting Started
 
-| WHAT FOR               | WHEN         |
-| :--------------------- | ------------ |
-| Deadline MVP           | `10-11-2024` |
-| Deadline CERTIFICATION | `^latest`    |
+### Installation
 
-## ARBORESCENCE / TEMPLATE PAGE
+Install the dependencies:
 
-| WHERE       |       ACTION        |
-| :---------- | :-----------------: |
-| HOME        | Web3 Connect, Event |
-| MARKETPLACE |   Collect Artist    |
-| ARTIST      | Stats & Performance |
-| LEAGUE      |      Historic       |
-| EVENT       |                     |
+```bash
+npm install
+```
 
-## INFORMATIONS
+### Development
 
-| WHERE     | URL                             |
-| :-------- | ------------------------------- |
-| Discord   | [#](#)                          |
-| Instagram | [https://www.instagram.com/](#) |
-| www       | [https://rethagon.com/](#)      |
+Start the development server with HMR:
 
-| WHO IS         | FOR               |  COMPANY   | CONTACT | DISCORD |
-| :------------- | ----------------- | :--------: | ------- | :-----: |
-| Nephelim       | Head of concept   |  Rethagon  | #       |   YES   |
-| Pierre Berthot | Photographer      | Freelancer | #       |   YES   |
-| Wojtek         | Legend            |   Artist   | #       |   YES   |
-| Neah           | Stack Developer   |  Rethagon  | #       |   YES   |
-| Nepha          | Stack Deveveloper |  Rethagon  | #       |   YES   |
-| Nicolas        | Mentor            |  Era 2140  | #       |   YES   |
-| Daniel         | Mentor            |   Alyra    | #       |   YES   |
+```bash
+npm run dev
+```
 
-## TECHNO
+Your application will be available at `http://localhost:5173`.
 
-| FULL       | STACK                                     |
-| ---------- | ----------------------------------------- |
-| FRONT-END  | `TYPESCRIPT` `REACT@19` `SASS` `TAILWIND` |
-| BACK-END   | `NODE 22 LTS` `SUPABASE` `REST`        |
-| BLOCKCHAIN | `POLYGON` `SOLIDITY`           |
-| PACKAGE    | `VITE`                                    |
+## Building for Production
 
-## RUNNING THE APPS
+Create a production build:
 
-Please install environment `HOMEBREW` for `MACOS`
+```bash
+npm run build
+```
+
+## Deployment
+
+### Docker Deployment
+
+To build and run using Docker:
+
+```bash
+docker build -t my-app .
+
+# Run the container
+docker run -p 3000:3000 my-app
+```
+
+The containerized application can be deployed to any platform that supports Docker, including:
+
+- AWS ECS
+- Google Cloud Run
+- Azure Container Apps
+- Digital Ocean App Platform
+- Fly.io
+- Railway
+
+### DIY Deployment
+
+If you're familiar with deploying Node applications, the built-in app server is production-ready.
+
+Make sure to deploy the output of `npm run build`
 
 ```
-brew install libusb
-curl -L https://foundry.paradigm.xyz | bash
-
-
+├── package.json
+├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
+├── build/
+│   ├── client/    # Static assets
+│   └── server/    # Server-side code
 ```
-Please the full Installation [is here](INSTALL.md)
 
-![Cover](https://github.com/nephcode/rethagon/blob/main/.github/images/rethagonReadmeFooter.png)
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+
+---
+
+Built with ❤️ using React Router.

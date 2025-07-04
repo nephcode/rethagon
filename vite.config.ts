@@ -1,20 +1,8 @@
-import { defineConfig } from 'vite';
+import { reactRouter } from "@react-router/dev/vite";
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  build: {
-    commonjsOptions: {
-      transformMixedEsModules: true,
-    },
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler', // or "modern", "legacy"
-        importers: [
-          // ...
-        ],
-      },
-    },
-  },
-
+  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 });
